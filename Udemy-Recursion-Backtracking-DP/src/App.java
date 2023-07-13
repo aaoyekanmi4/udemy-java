@@ -1,47 +1,41 @@
 import Backtracking.LetterCombinationsOfPhone;
 import Backtracking.NQueens;
 import Backtracking.Permutations;
+import DynammicProgramming.FibonacciDP;
+import DynammicProgramming.KnapSack01;
+import DynammicProgramming.RodCutting;
 import Recursion.*;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class App {
     public static void main(String[] args) {
-//        Fibonacci fib = new Fibonacci();
-//        int result = fib.fibTail(5, 0, 1);
-//        System.out.println(result);
-//        List<Integer> iterationResult = fib.iteration(5);
-//        System.out.println(iterationResult);
+//        FibonacciDP fibDP = new FibonacciDP();
+//        Map<Integer, Integer> table = new HashMap<>();
+//        table.put(0,0);
+//        table.put(1,1);
+//        int memoResult = fibDP.fibMemo(7, table);
+//        int tabResult = fibDP.fibTab(7, table);
+//        System.out.println(memoResult);
+//        System.out.println(tabResult);
+//
+//        int n = 4;
+//        int capacity = 8;
+//        int[] weights = {0, 1, 3, 4, 5};
+//        int[] values =  {0, 1, 4, 15,12};
+//        int[][] S = new int[n+1][capacity+1];
+//
+//        KnapSack01 kp = new KnapSack01(S, capacity, weights, values, n);
+//
+//        kp.solve();
 
-//        TowersOfHanoi towers = new TowersOfHanoi();
-//        towers.solve(2, 'A', 'B', 'C');
+        int totalLength = 5;
+        int[] prices = new int[]{0, 2, 5, 7 ,3, 9};
 
-        ReverseString reverseString = new ReverseString();
-        String reversed = reverseString.reverse("Hello");
-        System.out.println(reversed);
-
-        String reversedWithTail = reverseString.reverseTail("Hello", "");
-        System.out.println(reversedWithTail);
-
-        EuclideanGCD gcd = new EuclideanGCD();
-
-        int result = gcd.solve(496, 160);
-        int iterativeResult = gcd.solveIterative(496, 160);
-        System.out.println(result);
-        System.out.println(iterativeResult);
-
-        BinarySearch binarySearch = new BinarySearch();
-        int[] nums = new int[]{1,3,4,5,6,12,16,22,38,55,64};
-        int idx = binarySearch.find(nums, 38, 0, nums.length-1);
-        System.out.println(idx);
-
-        NQueens nQueens = new NQueens(4);
-        nQueens.solve();
-
-        Permutations problem = new Permutations();
-        System.out.println(problem.solve(new int[]{1,2,3}));
-
-        LetterCombinationsOfPhone phoneCombo = new LetterCombinationsOfPhone();
-        System.out.println(phoneCombo.getCombos("23"));
+        RodCutting problem = new RodCutting(prices, totalLength);
+        problem.solve();
+        problem.printResult();
     }
 }

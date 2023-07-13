@@ -4,9 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class LetterCombinationsOfPhone {
+
     private String[] digitToChars = {"","","abc","def","ghi","jkl","mno","pqrs","tuv","wxyz" };
-
-
 
     public List<String> getCombos(String digits) {
         List<String> combos = new ArrayList<>();
