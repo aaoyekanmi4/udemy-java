@@ -1,6 +1,9 @@
 package Recursion;
 
+
+// find factorioal of n
 public class Factorial {
+
     public int factHead(int n) {
         if (n==1) {
             System.out.println("Base case");

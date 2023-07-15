@@ -1,5 +1,8 @@
 package DynammicProgramming;
 
+// max profit for cutting rod into various pieces with price per piece
+// unbounded knapsack because you can take more than 1 of the same piece.
+
 public class RodCutting {
     private int[][] table;
     private int[] prices;

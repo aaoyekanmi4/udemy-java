@@ -12,6 +12,7 @@ public class TowersOfHanoi {
     * each move is taking upper disk from one rod and moving it to another
     * a larger disk cannot be placed on a smaller one
     *
+    * prints out the moves to move all disks to destination disk
     * */
     public void solve(int disk, char source, char middle, char destination) {
         if (disk == 0) {

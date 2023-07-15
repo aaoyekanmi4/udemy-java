@@ -12,6 +12,8 @@ public class KnapSack01 {
 
     private int n;
 
+    // 0-1 Knapsack maximum profit in taking items of different weights with a max capcity
+    // can either take the item or not.
     public KnapSack01(int[][] s, int capacity, int[] weights, int[] values, int n) {
         S = s;
         this.capacity = capacity;

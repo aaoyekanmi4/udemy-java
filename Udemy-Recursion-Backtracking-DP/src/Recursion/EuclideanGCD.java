@@ -1,5 +1,7 @@
 package Recursion;
 
+//find the greatest common divisor between two numbers
+
 public class EuclideanGCD {
     public int solve(int larger, int smaller) {
         if (larger % smaller == 0) {

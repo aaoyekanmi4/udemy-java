@@ -1,9 +1,7 @@
 import Backtracking.LetterCombinationsOfPhone;
 import Backtracking.NQueens;
 import Backtracking.Permutations;
-import DynammicProgramming.FibonacciDP;
-import DynammicProgramming.KnapSack01;
-import DynammicProgramming.RodCutting;
+import DynammicProgramming.*;
 import Recursion.*;
 
 import java.util.HashMap;
@@ -31,11 +29,26 @@ public class App {
 //
 //        kp.solve();
 
-        int totalLength = 5;
-        int[] prices = new int[]{0, 2, 5, 7 ,3, 9};
+//        int totalLength = 5;
+//        int[] prices = new int[]{0, 2, 5, 7 ,3, 9};
+//
+//        RodCutting problem = new RodCutting(prices, totalLength);
+//        problem.solve();
+//        problem.printResult();
 
-        RodCutting problem = new RodCutting(prices, totalLength);
+//        CoinChangeI coinChangeI = new CoinChangeI();
+//        int result = coinChangeI.solve(new int[]{1,2,5}, 11);
+//        System.out.println(result);
+
+//        CoinChangeII coinChangeII = new CoinChangeII(5,new int[]{1,2,5});
+//       int result =  coinChangeII.solve();
+//        System.out.println(result);
+
+        int[] nums = {3,4,5};
+        int sum = 9;
+        SubsetSum problem = new SubsetSum(sum, nums);
         problem.solve();
         problem.printResult();
+
     }
 }
