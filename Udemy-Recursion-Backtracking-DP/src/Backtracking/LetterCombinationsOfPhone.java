@@ -3,6 +3,7 @@ package Backtracking;
 import java.util.ArrayList;
 import java.util.List;
 
+// given a digit string return the ppssible letter combinations
 public class LetterCombinationsOfPhone {
 
     private String[] digitToChars = {"","","abc","def","ghi","jkl","mno","pqrs","tuv","wxyz" };
@@ -26,8 +27,8 @@ public class LetterCombinationsOfPhone {
         // change string of letters at that idx into an array to use foreach
         String[] lettersForNumber = digitToChars[letterMappingIdx].split("");
 
-        // for each letter ex "abc" run the following
-        // by
+        // fwor each letter ex "abc" run the following
+        // increase idx to backtrack for the next number in the digits string
         for (String letter: lettersForNumber) {
             backtrack(digits, idx + 1, current + letter, combos);
         }

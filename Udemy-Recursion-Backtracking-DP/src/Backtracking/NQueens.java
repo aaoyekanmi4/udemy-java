@@ -1,5 +1,6 @@
 package Backtracking;
 
+// given a number of queens return a placements of n-queens on n sized board where they are not attacking each other
 public class NQueens {
     private int[][] chessBoard;
     private int numOfQueens;

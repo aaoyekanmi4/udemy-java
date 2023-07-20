@@ -3,6 +3,7 @@ package Backtracking;
 import java.util.ArrayList;
 import java.util.List;
 
+// given an array of numbers, return all distinct orderings of the numbers
 public class Permutations {
 
     public List<List<Integer>> solve(int[] nums) {

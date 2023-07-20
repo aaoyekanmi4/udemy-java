@@ -1,8 +1,7 @@
-import Backtracking.LetterCombinationsOfPhone;
-import Backtracking.NQueens;
-import Backtracking.Permutations;
+import Backtracking.*;
 import DynammicProgramming.*;
 import Recursion.*;
+import Test.IncreasingIntervals;
 
 import java.util.HashMap;
 import java.util.List;
@@ -43,12 +42,31 @@ public class App {
 //        CoinChangeII coinChangeII = new CoinChangeII(5,new int[]{1,2,5});
 //       int result =  coinChangeII.solve();
 //        System.out.println(result);
+//
+//        int[] nums = {3,4,5};
+//        int sum = 9;
+//        SubsetSum problem = new SubsetSum(sum, nums);
+//        problem.solve();
+//        problem.printResult();
 
-        int[] nums = {3,4,5};
-        int sum = 9;
-        SubsetSum problem = new SubsetSum(sum, nums);
-        problem.solve();
-        problem.printResult();
+//        IncreasingIntervals increasingIntervals = new IncreasingIntervals();
+//        int result = increasingIntervals.getIntervals(List.of(2,3,5,7,8), 3);
+//        System.out.println(result);
+//        int[][] adjacencyMatrix = {{0,1,0,0,0,1},
+//                {1,0,1,0,0,0},
+//                {0,1,0,0,1,0},
+//                {0,0,0,0,1,1},
+//                {0,0,1,1,0,1},
+//                {1,0,0,1,1,0}};
+//        HamiltonianCycle problem = new HamiltonianCycle(adjacencyMatrix);
+//        problem.solve();
+
+//        LongestCommonSubsequence lcs = new LongestCommonSubsequence("ambulance", "turbulence");
+//        System.out.println(lcs.solve());
+
+        Subsets subsets = new Subsets();
+        System.out.println( subsets.solve(new int[] {1,2,3}));
+
 
     }
 }
