@@ -67,6 +67,12 @@ public class App {
         Subsets subsets = new Subsets();
         System.out.println( subsets.solve(new int[] {1,2,3}));
 
+        int[][] mazeTable = {{1, 1, 1, 1},
+                             {1,0,1,0},
+                             {0,0,1,1},
+                             {1, 0, 1, 1}};
 
+            Maze problem = new Maze(mazeTable);
+            problem.solve();
     }
 }
