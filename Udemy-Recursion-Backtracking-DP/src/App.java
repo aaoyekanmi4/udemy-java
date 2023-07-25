@@ -1,7 +1,8 @@
 import Backtracking.*;
-import DynammicProgramming.*;
-import Recursion.*;
-import Test.IncreasingIntervals;
+import DynammicProgramming.EggDrop;
+import InterviewQuestions.Fib1000thDigit;
+import InterviewQuestions.IsPrime;
+import InterviewQuestions.ReverseInteger;
 
 import java.util.HashMap;
 import java.util.List;
@@ -63,16 +64,33 @@ public class App {
 
 //        LongestCommonSubsequence lcs = new LongestCommonSubsequence("ambulance", "turbulence");
 //        System.out.println(lcs.solve());
+//
+//        Subsets subsets = new Subsets();
+//        System.out.println( subsets.solve(new int[] {1,2,3}));
+//
+//        int[][] mazeTable = {{1, 1, 1, 1},
+//                             {1,0,1,0},
+//                             {0,0,1,1},
+//                             {1, 0, 1, 1}};
+//
+//            Maze problem = new Maze(mazeTable);
+//            problem.solve();
 
-        Subsets subsets = new Subsets();
-        System.out.println( subsets.solve(new int[] {1,2,3}));
+//        ReverseInteger reverseInteger = new ReverseInteger();
+//        System.out.println(reverseInteger.reverseInt(4321));
 
-        int[][] mazeTable = {{1, 1, 1, 1},
-                             {1,0,1,0},
-                             {0,0,1,1},
-                             {1, 0, 1, 1}};
+//        IsPrime primeChecker = new IsPrime();
+//        List<Integer> primes = primeChecker.collectPrimes(List.of(1,2,3,4,5,6,7,8,9,10,11,12,13,14,15));
+//        System.out.println(primes);
+//        Map<Integer, Integer> table = new HashMap<>();
+//        table.put(0,0);
+//        table.put(1,1);
+//        Fib1000thDigit fib1000thDigit = new Fib1000thDigit();
+//        System.out.println(fib1000thDigit.fibTab());
 
-            Maze problem = new Maze(mazeTable);
-            problem.solve();
+        EggDrop eggDrop = new EggDrop(2, 100);
+        int result =  eggDrop.solve();
+        System.out.println(result);
+
     }
 }
