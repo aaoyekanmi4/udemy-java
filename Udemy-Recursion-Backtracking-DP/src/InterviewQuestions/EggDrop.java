@@ -1,4 +1,4 @@
-package DynammicProgramming;
+package InterviewQuestions;
 
 public class EggDrop {
     private int numOfEggs;

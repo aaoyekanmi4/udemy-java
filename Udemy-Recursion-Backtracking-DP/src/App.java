@@ -1,12 +1,6 @@
-import Backtracking.*;
-import DynammicProgramming.EggDrop;
-import InterviewQuestions.Fib1000thDigit;
-import InterviewQuestions.IsPrime;
-import InterviewQuestions.ReverseInteger;
+import InterviewQuestions.SortThree;
 
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.Arrays;
 
 public class App {
     public static void main(String[] args) {
@@ -87,10 +81,13 @@ public class App {
 //        table.put(1,1);
 //        Fib1000thDigit fib1000thDigit = new Fib1000thDigit();
 //        System.out.println(fib1000thDigit.fibTab());
+//
+//        EggDrop eggDrop = new EggDrop(2, 100);
+//        int result =  eggDrop.solve();
+//        System.out.println(result);
 
-        EggDrop eggDrop = new EggDrop(2, 100);
-        int result =  eggDrop.solve();
-        System.out.println(result);
-
+        SortThree sortThree = new SortThree();
+        int[] result = sortThree.solve(new int[]{0,2,2,2,1,1,1,2,2,2,1,1,0,0,0,2,2,2});
+        System.out.println(Arrays.toString(result));
     }
 }

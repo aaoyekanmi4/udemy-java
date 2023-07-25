@@ -3,6 +3,7 @@ package DynammicProgramming;
 import java.util.ArrayList;
 import java.util.List;
 
+// Kadane's algorithm. Given an array returns largest sum of integers in the array
 public class MaximumSubarray {
 
     public void solve(int[] nums) {
