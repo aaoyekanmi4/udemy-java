@@ -91,8 +91,10 @@ public class App {
 //        int[] result = sortThree.solve(new int[]{0,2,2,2,1,1,1,2,2,2,1,1,0,0,0,2,2,2});
 //        System.out.println(Arrays.toString(result));
 
-        TrappingRainWater trappingRainWater = new TrappingRainWater(new int[]{1,0,2,1,3,1,2,0,3});
+        TrappingRainWater trappingRainWater = new TrappingRainWater(new int[]{1,0,6,1,3,1,2,0,3});
         int result = trappingRainWater.solve2Pointer();
+        int result2 = trappingRainWater.solve();
         System.out.println(result);
+        System.out.println(result2);
     }
 }

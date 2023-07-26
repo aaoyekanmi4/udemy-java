@@ -55,18 +55,17 @@ public class TrappingRainWater {
         int trappedWater = 0;
         int currentMaxLeft = 0;
         int currentMaxRight = 0;
-        for (int i = 0; i < heights.length; i++) {
-            if (i > 1) {
-                currentMaxLeft = heights[i-1] > currentMaxLeft ? heights[i-1]: currentMaxLeft;
-            }
-            if (i < heights.length -1) {
-                currentMaxRight = heights[i+1] > currentMaxRight ? heights[i+1] : currentMaxRight;
-            }
-            int possibleTrapAmount = Math.min(currentMaxLeft, currentMaxRight) - heights[i];
-            if (possibleTrapAmount >= 0) {
-                trappedWater += possibleTrapAmount;
+        int i = 0;
+        int j = heights.length -1;
+        while (i < j) {
+            currentMaxLeft = Math.max(currentMaxLeft, heights[i]);
+            currentMaxRight = Math.max(currentMaxRight, heights[j]);
+            if (currentMaxLeft < currentMaxRight) {
+                trappedWater += currentMaxLeft - heights[i];
+                i++;
             } else {
-                continue;
+                trappedWater += currentMaxRight - heights[j];
+                j--;
             }
         }
         return trappedWater;
