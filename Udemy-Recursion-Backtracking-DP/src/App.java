@@ -1,4 +1,5 @@
 import InterviewQuestions.SortThree;
+import InterviewQuestions.TrappingRainWater;
 
 import java.util.Arrays;
 
@@ -86,8 +87,12 @@ public class App {
 //        int result =  eggDrop.solve();
 //        System.out.println(result);
 
-        SortThree sortThree = new SortThree();
-        int[] result = sortThree.solve(new int[]{0,2,2,2,1,1,1,2,2,2,1,1,0,0,0,2,2,2});
-        System.out.println(Arrays.toString(result));
+//        SortThree sortThree = new SortThree();
+//        int[] result = sortThree.solve(new int[]{0,2,2,2,1,1,1,2,2,2,1,1,0,0,0,2,2,2});
+//        System.out.println(Arrays.toString(result));
+
+        TrappingRainWater trappingRainWater = new TrappingRainWater(new int[]{1,0,2,1,3,1,2,0,3});
+        int result = trappingRainWater.solve2Pointer();
+        System.out.println(result);
     }
 }
