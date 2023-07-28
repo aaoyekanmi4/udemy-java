@@ -1,5 +1,8 @@
+import BitManipulation.CountingBits;
+import BitManipulation.EvenOdd;
 import InterviewQuestions.SortThree;
 import InterviewQuestions.TrappingRainWater;
+import Selection.QuickSelect;
 
 import java.util.Arrays;
 
@@ -91,10 +94,20 @@ public class App {
 //        int[] result = sortThree.solve(new int[]{0,2,2,2,1,1,1,2,2,2,1,1,0,0,0,2,2,2});
 //        System.out.println(Arrays.toString(result));
 
-        TrappingRainWater trappingRainWater = new TrappingRainWater(new int[]{1,0,6,1,3,1,2,0,3});
-        int result = trappingRainWater.solve2Pointer();
-        int result2 = trappingRainWater.solve();
-        System.out.println(result);
-        System.out.println(result2);
+//        TrappingRainWater trappingRainWater = new TrappingRainWater(new int[]{1,0,6,1,3,1,2,0,3});
+//        int result = trappingRainWater.solve2Pointer();
+//        int result2 = trappingRainWater.solve();
+//        System.out.println(result);
+//        System.out.println(result2);
+
+//        QuickSelect quickSelect = new QuickSelect(new int[] {6,3,5,7,3,1,4,5,6,9,11,4,2});
+//        int[] result = quickSelect.sort();
+//        System.out.println(Arrays.toString(result));
+
+//        CountingBits countingBits = new CountingBits();
+////        countingBits.countBits(120);
+
+        EvenOdd evenOdd = new EvenOdd();
+        evenOdd.check(128278);
     }
 }
