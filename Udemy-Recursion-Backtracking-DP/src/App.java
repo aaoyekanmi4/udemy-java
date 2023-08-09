@@ -1,3 +1,4 @@
+import BinPacking.FirstFitDecreasingAlgorithm;
 import BitManipulation.CountingBits;
 import BitManipulation.EvenOdd;
 import InterviewQuestions.SortThree;
@@ -5,6 +6,7 @@ import InterviewQuestions.TrappingRainWater;
 import Selection.QuickSelect;
 
 import java.util.Arrays;
+import java.util.List;
 
 public class App {
     public static void main(String[] args) {
@@ -101,13 +103,20 @@ public class App {
 //        System.out.println(result2);
 
 //        QuickSelect quickSelect = new QuickSelect(new int[] {6,3,5,7,3,1,4,5,6,9,11,4,2});
-//        int[] result = quickSelect.sort();
+//        int[]go result = quickSelect.sort();
 //        System.out.println(Arrays.toString(result));
 
 //        CountingBits countingBits = new CountingBits();
 ////        countingBits.countBits(120);
 
-        EvenOdd evenOdd = new EvenOdd();
-        evenOdd.check(128278);
+//        EvenOdd evenOdd = new EvenOdd();
+//        evenOdd.check(128278);
+
+        List<Integer> items = Arrays.asList(3,2,4);
+        int binCapcity = 10;
+
+        FirstFitDecreasingAlgorithm algo = new FirstFitDecreasingAlgorithm(items, binCapcity);
+        algo.solve();
+        algo.showResults();
     }
 }
