@@ -9,7 +9,6 @@ public class Maze {
         this.maze = maze;
         this.mazeSize = maze.length;
         this.solution = new int[mazeSize][mazeSize];
-
     }
 
     public void solve(){
