@@ -1,3 +1,4 @@
+import ArrayProblems.TemperatureAboveAverage;
 import Backtracking.Sudoku;
 import BinPacking.FirstFitDecreasingAlgorithm;
 import BitManipulation.CountingBits;
@@ -5,7 +6,7 @@ import BitManipulation.EvenOdd;
 import InterviewQuestions.SortThree;
 import InterviewQuestions.TrappingRainWater;
 import Selection.QuickSelect;
-
+import Helpers.ConsoleIO;
 import java.util.Arrays;
 import java.util.List;
 
@@ -119,17 +120,22 @@ public class App {
 //        FirstFitDecreasingAlgorithm algo = new FirstFitDecreasingAlgorithm(items, binCapcity);
 //        algo.solve();
 //        algo.showResults();
-        int [][] sudokuTable = {{0,0,7,5,0,0,0,1,3},
-                                {4,0,5,0,0,0,6,0,9},
-                                {6,0,0,0,0,2,0,0,0},
-                                {7,0,0,6,1,0,0,0,0},
-                                {0,0,3,0,0,0,1,0,0},
-                                {0,0,0,0,2,7,0,6,4},
-                                {8,1,0,2,5,3,7,0,6},
-                                {5,7,0,9,6,0,4,3,8},
-                                {3,9,0,0,0,4,0,0,0},
-                                };
-        Sudoku sudoku = new Sudoku(sudokuTable);
-        sudoku.solveProblem();
+//        int [][] sudokuTable = {{0,0,7,5,0,0,0,1,3},
+//                                {4,0,5,0,0,0,6,0,9},
+//                                {6,0,0,0,0,2,0,0,0},
+//                                {7,0,0,6,1,0,0,0,0},
+//                                {0,0,3,0,0,0,1,0,0},
+//                                {0,0,0,0,2,7,0,6,4},
+//                                {8,1,0,2,5,3,7,0,6},
+//                                {5,7,0,9,6,0,4,3,8},
+//                                {3,9,0,0,0,4,0,0,0},
+//                                };
+//        Sudoku sudoku = new Sudoku(sudokuTable);
+//        sudoku.solveProblem();
+
+        ConsoleIO io = new ConsoleIO();
+        int tempLength = io.readInt("How many days' temperature? ");
+        ArrayProblems.TemperatureAboveAverage temperatureAboveAverage = new TemperatureAboveAverage(tempLength);
+        temperatureAboveAverage.runProgram();
     }
 }
