@@ -143,8 +143,6 @@ public class App {
         sLL.createSinglyLinkedList(5);
         sLL.insertNode(6,0);
         sLL.insertNode(7,1);
-        System.out.println(sLL.head.value);
-        System.out.println(sLL.head.next.value);
-        System.out.println(sLL.tail.value);
+        sLL.traverse();
     }
 }

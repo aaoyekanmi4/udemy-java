@@ -37,4 +37,17 @@ public class SinglyLinkedList {
         }
         size++;
     }
+
+    public void traverse() {
+        if (head == null) System.out.println("no linked list to traverse");
+        Node current = head;
+        for (int i = 0; i < size; i++) {
+            System.out.print(current.value);
+            if (i != size -1) {
+                System.out.print(" -> ");
+            }
+            current = current.next;
+        }
+        System.out.println("\n");
+    }
 }
