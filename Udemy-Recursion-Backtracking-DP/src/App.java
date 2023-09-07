@@ -5,6 +5,7 @@ import BitManipulation.CountingBits;
 import BitManipulation.EvenOdd;
 import InterviewQuestions.SortThree;
 import InterviewQuestions.TrappingRainWater;
+import LinkedLists.SinglyLinkedList;
 import Selection.QuickSelect;
 import Helpers.ConsoleIO;
 import java.util.Arrays;
@@ -132,10 +133,14 @@ public class App {
 //                                };
 //        Sudoku sudoku = new Sudoku(sudokuTable);
 //        sudoku.solveProblem();
+//
+//        ConsoleIO io = new ConsoleIO();
+//        int tempLength = io.readInt("How many days' temperature? ");
+//        ArrayProblems.TemperatureAboveAverage temperatureAboveAverage = new TemperatureAboveAverage(tempLength);
+//        temperatureAboveAverage.runProgram();
 
-        ConsoleIO io = new ConsoleIO();
-        int tempLength = io.readInt("How many days' temperature? ");
-        ArrayProblems.TemperatureAboveAverage temperatureAboveAverage = new TemperatureAboveAverage(tempLength);
-        temperatureAboveAverage.runProgram();
+        SinglyLinkedList sLL = new SinglyLinkedList();
+        sLL.createSinglyLinkedList(5);
+        System.out.println(sLL.head.value);
     }
 }
