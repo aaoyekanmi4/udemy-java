@@ -1,4 +1,5 @@
 import ArrayProblems.TemperatureAboveAverage;
+import Backtracking.Permutations;
 import Backtracking.Sudoku;
 import BinPacking.FirstFitDecreasingAlgorithm;
 import BitManipulation.CountingBits;
@@ -6,6 +7,7 @@ import BitManipulation.EvenOdd;
 import InterviewQuestions.SortThree;
 import InterviewQuestions.TrappingRainWater;
 import LinkedLists.SinglyLinkedList;
+import MasterMind.FourNumberGame;
 import Selection.QuickSelect;
 import Helpers.ConsoleIO;
 import java.util.Arrays;
@@ -139,10 +141,17 @@ public class App {
 //        ArrayProblems.TemperatureAboveAverage temperatureAboveAverage = new TemperatureAboveAverage(tempLength);
 //        temperatureAboveAverage.runProgram();
 
-        SinglyLinkedList sLL = new SinglyLinkedList();
-        sLL.createSinglyLinkedList(5);
-        sLL.insertNode(6,0);
-        sLL.insertNode(7,1);
-        sLL.traverse();
+//        SinglyLinkedList sLL = new SinglyLinkedList();
+//        sLL.createSinglyLinkedList(5);
+//        sLL.insertNode(6,0);
+//        sLL.insertNode(7,1);
+//        sLL.traverse();
+//        sLL.search(7);
+
+//        Permutations permute = new Permutations();
+//        System.out.println(permute.solve(new int[]{1,2,3,4}));
+
+        FourNumberGame game = new FourNumberGame();
+        game.runGame();
     }
 }

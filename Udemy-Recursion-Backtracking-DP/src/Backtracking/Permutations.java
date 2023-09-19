@@ -9,6 +9,7 @@ public class Permutations {
     public List<List<Integer>> solve(int[] nums) {
         List<List<Integer>> solution = new ArrayList<>();
         makePermutations(new ArrayList<>(), solution, nums);
+        System.out.println(solution.size());
         return solution;
     }
 

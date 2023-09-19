@@ -50,4 +50,33 @@ public class SinglyLinkedList {
         }
         System.out.println("\n");
     }
+
+    public boolean search(int searchValue) {
+        if (head == null) System.out.println("No linked list to search");
+        Node current = head;
+        for (int i = 0; i < size; i++) {
+            if (current.value == searchValue) {
+                System.out.println("Search value found at " + i);
+                return true;
+            }
+            current = current.next;
+        }
+        System.out.println("Search value not found");
+        return false;
+    }
+
+    public void deleteNode(int location) {
+        if (head == null) {
+            System.out.println("No list to delete from");
+            return;
+        } else if (location == 0) {
+            head = head.next;
+            size--;
+            if (size == 0) {
+                tail = null;
+            }
+        } else if (location == size -1) {
+
+        }
+    }
 }
