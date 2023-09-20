@@ -95,7 +95,6 @@ public class FourNumberGame {
             gameOver = true;
         } else {
             checkCombos(numberRightlyPlaced, guess);
-            System.out.println(permutations);
             System.out.println("Combos Left: " + permutations.size());
             System.out.printf("%s number%s in the right place. Try again. %n", numberRightlyPlaced,
                     numberRightlyPlaced == 1 ? "" : "s");
