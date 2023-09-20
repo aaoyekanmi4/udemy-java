@@ -25,7 +25,7 @@ public class FullGame {
 
     private int[] convertGuessToInt(String guessInput) {
         int[] result = new int[4];
-        String[] guessArray = guessInput.split(",");
+        String[] guessArray = guessInput.split("");
         for (int i = 0; i < guessArray.length; i++) {
             result[i] = Integer.parseInt(guessArray[i].trim());
         }
@@ -57,7 +57,7 @@ public class FullGame {
     private void makeGuess () {
         System.out.println("Attempt number: " + currentTry);
         String guessInput = io.readRequiredString("Enter 4 numbers (range 1-6) " +
-                "in any order separated by commas" +
+                "in any order" +
                 "\nDuplicates possible.\n");
         int[] guess = convertGuessToInt(guessInput);
         int numberRightlyPlaced = checkPlacement(guess);

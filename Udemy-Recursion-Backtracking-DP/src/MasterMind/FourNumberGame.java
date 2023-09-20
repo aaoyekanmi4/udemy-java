@@ -26,7 +26,7 @@ public class FourNumberGame {
 
     private int[] convertGuessToInt(String guessInput) {
         int[] result = new int[4];
-        String[] guessArray = guessInput.split(",");
+        String[] guessArray = guessInput.split("");
         for (int i = 0; i < guessArray.length; i++) {
             result[i] = Integer.parseInt(guessArray[i]);
         }
@@ -85,7 +85,7 @@ public class FourNumberGame {
 
     private void makeGuess () {
         System.out.println("Attempt number: " + currentTry);
-        String guessInput = io.readRequiredString("Enter numbers 1-4 in any order separated by commas\n");
+        String guessInput = io.readRequiredString("Enter numbers 1-4 in any order\n");
         int[] guess = convertGuessToInt(guessInput);
         int numberRightlyPlaced = checkGuess(guess);
         if (numberRightlyPlaced == 4) {
