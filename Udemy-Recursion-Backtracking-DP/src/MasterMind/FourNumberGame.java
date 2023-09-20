@@ -22,7 +22,6 @@ public class FourNumberGame {
         int randomIdx = rand.nextInt(permutations.size());
         this.code = permutations.get(randomIdx);
         this.io = new ConsoleIO();
-
     }
 
     private int[] convertGuessToInt(String guessInput) {

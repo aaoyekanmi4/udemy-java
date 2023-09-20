@@ -8,6 +8,7 @@ import InterviewQuestions.SortThree;
 import InterviewQuestions.TrappingRainWater;
 import LinkedLists.SinglyLinkedList;
 import MasterMind.FourNumberGame;
+import MasterMind.FullGame;
 import Selection.QuickSelect;
 import Helpers.ConsoleIO;
 import java.util.Arrays;
@@ -151,7 +152,7 @@ public class App {
 //        Permutations permute = new Permutations();
 //        System.out.println(permute.solve(new int[]{1,2,3,4}));
 
-        FourNumberGame game = new FourNumberGame();
-        game.runGame();
+        FullGame masterMindGame = new FullGame();
+        masterMindGame.runGame();
     }
 }
